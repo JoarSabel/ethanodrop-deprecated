@@ -1,0 +1,358 @@
+/*Navigation bar*/
+.navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    
+  }
+
+
+/*The elements of the navbar*/
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Change the background color on mouse-over */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Style the active/current link*/
+.navbar a.active {
+    background-color: #ff7d00;
+    color: white;
+}
+  
+  /* Float the link section to the right */
+.navbar-right {
+    float: right;
+}
+  
+/*Searchbar*/
+.navbar input[type=text]{
+    float: left;
+    padding: 6px;
+    border:#ff7d00;
+    border-style: solid;
+    margin-top: 8px;
+    margin-right: 400px;
+    font-size: 25px;
+    width: 500px;
+}
+
+  /* Adds responsiveness to the website using media queries, with a limit of 500px */
+@media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: flex;
+      text-align: left;
+      
+    }
+    .navbar-right {
+      float: none;
+    }
+    .navbar input[type=text] {
+    float: left;
+    padding: 6px;
+    border:#ff7d00;
+    border-style: solid;
+    margin-top: 8px;
+    margin-right: 400px;
+    font-size: 25px;
+    width: 250px;
+    }
+    #BeerPic{display: none;}
+
+    #WinePic{display: none;}
+
+    #SpiritPic{display: none;}
+
+    .process_img1{display: none;}
+
+    .footer{
+        float: none;
+        display: flex;
+        text-align: left;
+    }
+
+
+
+}
+
+/*Navbar logo*/
+.navbar img {
+    float: left;
+    width: 140px;
+    height: 60px;
+    background:transparent
+}
+
+/*Navbar follows smoothly along when scrolling*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .headBackground {
+    padding-top: 20px;
+}
+
+/*The first image on the page*/  
+.headBackground{
+    position: relative;
+    text-align: center;   
+
+}
+
+/*Company name*/  
+.centered{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto; 
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s; 
+}
+
+/*Slogan text with animations*/
+.slogan{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    animation: fadeIn ease 8s;
+    -webkit-animation: fadeIn ease 8s;
+}
+
+/*Japaneese version of the logo*/
+.slogan_JAP{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 8s;
+}
+
+/*Fade in animations*/
+@keyframes fadeIn{
+    0% {opacity:0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+
+
+/*Responsive image*/
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+/*Picture for the "about" section*/
+.about_pic{
+    position: relative;
+    width: 100%;
+    height: auto;
+    opacity: 80%;
+}
+
+
+/*Process description*/
+.process{
+    padding-top: 3%;
+    float: left;
+    padding-left: 3%;
+}
+
+/*Title, slogan, text and image for the process section*/
+.process_title{
+    text-align: center;
+    
+}
+
+.process_slogan{
+    text-align: center;
+    font-style: italic;
+}
+
+.process_desc{
+    
+    text-align: center;
+}
+
+.process_img1{
+    float: right;
+    height: auto;
+    width: 50%;
+}
+
+/*LOGIN box*/
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Input focus handler */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+} 
+
+
+/*The footer and its various parts*/
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #6d6d6d;
+    overflow: hidden;
+    flex-direction: column;
+    
+}
+
+/*Social media etc..*/
+.infocontainer{
+    float: left;
+    text-align: left;
+    width: 35%;
+    padding-left: 10%;
+    padding-top: 1.5%;
+}
+
+/*Social media images and other info*/
+#fb_l{
+    float: left;
+    width:15%;
+    height: auto;
+}
+
+#ig_l{
+    float: none;
+    width: 15%;
+    height: auto;
+}
+
+#tw_l{
+    width: 10%;
+    height: auto;
+    float: none;
+}
+
+#gPlay{
+    width: 30%;
+    height: auto;
+}
+
+#aStore{
+    width: 30%;
+    height: auto;
+}
+
+.contactInfo{
+    padding-top: 1.5%;
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+.payment{
+    padding-top: 1.5%;
+    float: right;
+    width: 30%;
+    text-align: left;
+}
+
+#paymentMethod{
+    background: transparent;
+    width: 55%;
+    height: auto;
+}
