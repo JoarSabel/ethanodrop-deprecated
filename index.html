@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>EthanoDrop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel = "stylesheet" href = "style.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+  
+
+<div class = "navbar" id = "myNavbar">
+  <img src = "assets/EthanoDrop_Logo.png" alt = "EthanoDrop"/>
+  <div class="navbar-right">
+    <input type="text" placeholder="Search...">
+    <a class="active" href = "#home" id="login" onclick="formSetter()">Log in / Sign up</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="">Language</a>
+    
+
+  </div>
+</div>
+
+<!--Login window-->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+    <a href="url" style="font-size: 1vw;">Sign up <br></a>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div> 
+
+<!-- Header -->
+<header id = "header-background" class="headBackground">
+  <div class = "logo"></div>
+  <img src="./assets/cheers_header.jpg" alt="Nature" class="responsive" style="width: 100%;">
+  <h1 style="font-size: 2.3vw;" class = "centered" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">EthanoDrop</h1>
+  <h2 style="font-size: 2vw;" class = "slogan" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>"Keep it going"</em></h2>
+  <h3 style="font-size: 1.25vw;" class = "slogan_JAP" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><em>"僕たちは止まらない"</em></h3>
+  
+</header>
+
+
+
+<!-- About Section -->
+<div class="w3-row w3-padding-64" id="about">
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="./assets/about_pic.jpg" class="about_pic" alt="Table Setting" width="600" height="750">
+  </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">About EthanoDrop</h1><br>
+    <h5 class="w3-center">Keeping it going since 2020</h5>
+    <p class="w3-large">Founded on the simple principle that no person should have to leave their house to get a drink, EthanoDrop was established in early 2020 by a couple of students. 
+      Since then other delivery companies have tried, and failed to mimic their success. 
+      The idea is and always has been to deliver "supplies" to parties and gatherings so that others don't have to.
+      Pictured to the left you will see just some of our very qualified deliverypeople, skilled not only in the art of fast deliveries but also in the art of charm. So please join our rapidly
+      growing community and make your life easier in the process.
+      <span class="w3-tag w3-light-grey"></span></p>
+    <h5 class="w3-center">僕たちは止まらない</h5>
+    <p class="w3-large w3-text-grey w3-hide-medium">
+      誰かが買い出しに行かないといけない犠牲を防ぐため、僕たちは２０２０年いETHANODROPを確立した。他の企業には真似できない速さでお酒をお届けできる僕たちは国一番の配達企業になれた。僕らのおかげで買い出しにいく犠牲は減った。経験豊富なお届け人たちが皆様のパーティーにて気分を盛り上げるこのことになるだろう。</p>
+  </div>
+</div>
+
+
+
+
+
+<!--Our selection-->
+<div class = "w3-row-padding" id="selection">
+  <h1 class="w3-center">Our selection</h1>
+  <img src="./assets/beer.jpg" class="w3-third" alt="Beer" width="600" height="750" id="BeerPic">
+  <img src="./assets/wine.png" class="w3-third" alt="Wine" width="600" height="750" id = "WinePic">
+  <img src="./assets/spirit.jpg" class="w3-third" alt="Spirits" width="600" height="750" id="SpiritPic">
+  <input type="image" src="./assets/BEER__CIDER_LOGO.png" class="w3-third" >
+  <input type="image" src="./assets/WINE_LOGO.png" class="w3-third">
+  <input type="image" src="./assets/SPIRIT_LOGO.png" class="w3-third">
+</div>
+
+<!--The description of the process-->
+<div class="process">
+  <h1 class="process_title">How it works</h1>
+  <h2 class="process_slogan">The journey to an easier life begins here! </h2>
+  <p class="process_desc">The process is quite simple, once you have created a valid account on our website and we have verified that you are of legal age, <br> you can start
+    browsing our selection of products and then order them straight to your door form any device with an internet connection. <br> <br>
+
+  Once your order has been placed, one of our trusted couriers will pick up your order and proceed to your location posthaste. <br> Upon arrival the courier will once again check your ID's as
+  an added safety precaution. In larger cities orders can be delivered using a bicycle <br> courier but in more remote areas they might have to be carried out using a car or some other 
+  mode of transportation <br> <br>
+
+  You can always track your order using our website or our mobile application, so that you can stay up to date on when the courier <br> will approximately arrive. <br> <br>
+  <a href="https://www.youtube.com/watch?v=72bcm93koDY" class="w3-center">使用方法</a>
+  </p>
+  
+</div>
+
+<!--The process image-->
+<div>
+  <img src="./assets/process.png" class="process_img1" alt="delivery1">
+</div>
+
+<footer class="footer">
+  <div class="infocontainer">
+    <h1>EthanoDrop</h1> <br>
+    <img src="./assets/fb_logo.png" id="fb_l" alt="">
+    <img src="./assets/insta_log.png" id="ig_l" alt="">
+    <img src="./assets/twitter_logo.png" id="tw_l" alt="">
+    <h2 class="w3-large">Download the app</h2>
+    <img src="./assets/googleplay.png" id="gPlay" alt="">
+    <img src="./assets/applestore.png" id="aStore" alt="">
+  </div>
+  <div class="contactInfo" id="contact">
+    <h1 class="contact_title" >Contact us</h1>
+    <p>Email: ethanodrop@info.com <br> 
+
+      Phone: +358451234567 <br>
+      
+      Office of International Cooperation: 60 Boulevard du Jardin Exotique, 98000 Monaco <br>
+      
+      Local office (Finland): Arkadiankatu 3-6 3rd floor, 00100 Helsinki <br>
+      
+      Local officer(Japan): 〒730-0037 広島県広島市中区中町７−41 </p>
+  </div>
+
+  <div class="payment">
+    <h1>Payment methods</h1>
+    <img src="./assets/paymentmethod.png" id="paymentMethod" alt="">
+  </div>
+</footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
